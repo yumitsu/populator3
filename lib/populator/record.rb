@@ -24,6 +24,11 @@ module Populator
           @attributes[column.to_sym] = model_class.to_s
         end
       end
+      # So NOT NULL columns with default values don't raise errors
+      # when omitted from the populate block:
+      model_class.columns.find_all{|c| !c.default.nil? }.each do |column|
+        @attributes[column.name.to_sym] = column.default
+      end
     end
     
     # override id since method_missing won't catch this column name
