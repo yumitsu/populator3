@@ -3,13 +3,6 @@ require 'rspec'
 require 'active_support'
 require 'active_record'
 
-# Patch for stupid ActiveSupport
-class Array
-  def rand
-    sample
-  end
-end
-
 require File.dirname(__FILE__) + '/../lib/populator.rb'
 
 adapter = ENV['POPULATOR_ADAPTER'] || 'sqlite3'
