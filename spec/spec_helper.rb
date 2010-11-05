@@ -1,5 +1,5 @@
 require 'rubygems'
-require 'spec'
+require 'rspec'
 require 'active_support'
 require 'active_record'
 require File.dirname(__FILE__) + '/../lib/populator.rb'
@@ -43,6 +43,6 @@ require File.dirname(__FILE__) + '/models/product.rb'
 CreateCategories.migrate(:up) unless Category.table_exists?
 CreateProducts.migrate(:up) unless Product.table_exists?
 
-Spec::Runner.configure do |config|
+RSpec.configure do |config|
   config.mock_with :mocha
 end

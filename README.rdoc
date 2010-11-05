@@ -1,6 +1,7 @@
 = Populator
 
 Populate an Active Record database with mass insert.
+Now Rails 3 compatible.
 
 You can find the rdocs at http://populator.rubyforge.org.
 
@@ -12,7 +13,7 @@ this code is loosely based on.
 
 Install the gem:
 
-  gem install populator
+  gem install populator3
 
 And then load it in your project:
 
