@@ -2,12 +2,12 @@ require 'rubygems'
 require 'rake'
 require 'echoe'
 
-Echoe.new('populator3', '0.2.4') do |p|
+Echoe.new('populator3', '0.2.5') do |p|
   p.summary        = "Mass populate an Active Record database."
   p.description    = "Mass populate an Active Record database."
   p.url            = "http://github.com/ryanb/populator"
-  p.author         = 'Ryan Bates'
-  p.email          = "ryan (at) railscasts (dot) com"
+  p.author         = 'Ryan Bates, Alex Zinchenko'
+  p.email          = "ryan (at) railscasts (dot) com, admloki (at) gmail (dot) com"
   p.ignore_pattern = ["script/*", "**/*.sqlite3", "tmp/*"]
   p.development_dependencies = []
 end
