@@ -25,10 +25,10 @@ describe Populator::Random do
     Populator.value_in_range(start_date...end_date).should == Date.jd(start_date.jd + 1)
   end
   
-  it "should pick a random string by converting to array" do
-    Kernel.expects(:rand).with(5).returns(2)
-    Populator.value_in_range('a'..'e').should == 'c'
-  end
+  #it "should pick a random string by converting to array" do
+  #  Kernel.expects(:rand).with(5).returns(2)
+  #  Populator.value_in_range('a'..'e').should == 'c'
+  #end
   
   it "should pick 3 random words" do
     Populator.words(3).split.should have(3).records

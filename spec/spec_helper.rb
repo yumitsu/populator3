@@ -2,6 +2,14 @@ require 'rubygems'
 require 'rspec'
 require 'active_support'
 require 'active_record'
+
+# Patch for stupid ActiveSupport
+class Array
+  def rand
+    sample
+  end
+end
+
 require File.dirname(__FILE__) + '/../lib/populator.rb'
 
 adapter = ENV['POPULATOR_ADAPTER'] || 'sqlite3'
@@ -9,7 +17,7 @@ puts "Running on #{adapter}"
 
 # setup database adapter
 ActiveRecord::Base.establish_connection(
-  YAML.load(File.read(File.dirname(__FILE__) + "/database.yml"))[adapter]
+  YAML.load(File.read(File.dirname(__FILE__) + "/example_database.yml"))[adapter]
 )
 
 # keep track of which queries have been executed
