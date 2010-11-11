@@ -1,4 +1,4 @@
-= Populator
+= Populator3
 
 Populate an Active Record database with mass insert.
 Now Rails 3 compatible.
@@ -82,11 +82,10 @@ you to ensure you're adding valid data.
 
 See spec/README for instructions on running specs.
 
+Original project by Ryan Bates at http://github.com/ryanb/populator.
 This project can be found on github at the following URL.
 
-http://github.com/ryanb/populator
+Forked and switched to Rails 3 by Alex Zinchenko (http://github.com/yumitsu).
+Feel free to send founded bugs to issue tracker at GitHub.
 
-If you find a bug, please send me a message on GitHub.
-
-If you would like to contribute to this project, please fork the 
-repository and send me a pull request.
+If you want to help me to maintain this project, please fork the project and send a pull request.
