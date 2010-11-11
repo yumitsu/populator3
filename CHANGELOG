@@ -1,4 +1,12 @@
+0.2.7 (November 11th, 2010)
+
+* Changed home URL to http://github.com/yumitsu/populator3
+* Fixed error with NOT NULL fields (thanks to Ivan V. <http://github.com/ivanvr>)
+
+0.2.6 (November 5th, 2010)
+
 * Now populator supports Rails 3
+* Fixed specs, added more flexibility with primary key name (thanks to Thierry Treyer <http://github.com/zehkae>)
 
 0.2.5 (November 5th, 2010)
 
