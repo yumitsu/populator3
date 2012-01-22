@@ -1,5 +1,13 @@
 = Populator3
 
+== NOTICE
+
+Ryan updated his gem and now it's compatible with Rails 3.0. 
+
+Please, use Ryan's version instead of populator3 — https://github.com/ryanb/populator.
+
+== Description
+
 Populate an Active Record database with mass insert.
 Now Rails 3 compatible.
 
